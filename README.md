@@ -1,3 +1,4 @@
 # J4D
-python包：
-reedsolo  0.3.0
+python包：reedsolo  0.3.0
+
+可直接运行FT.py，在运行过程中会生成诸多文件，推荐将文件生成存储到之外的文件夹中。
