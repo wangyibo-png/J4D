@@ -1,11 +1,11 @@
-from Helper_Functions import *
+from utils import *
 from DNAFountain import *
 import zipfile, os
 import bz2, lzma
 import csv, shutil
 logging.getLogger().setLevel(logging.DEBUG)
 
-class trans_DNA:
+class DNA_transformer:
 
     def __init__(self, infile_folder, dna_folder, message_file, out_file_folder):
         self.infile_folder = infile_folder
@@ -13,8 +13,6 @@ class trans_DNA:
         self.message_file = message_file
         self.out_file_folder = out_file_folder
     
-
-
     def Jpeg2DNA(self, input_file, dna_file):
         in_file = 'temp_in_file'
         temp_file = zipfile.ZipFile(in_file,mode='w', allowZip64=False, compression=zipfile.ZIP_LZMA)
